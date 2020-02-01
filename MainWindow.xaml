@@ -7,7 +7,7 @@
                       ShowInTaskbar="False"
                       WindowStartupLocation="Manual" Left="0" Top="0"
                       ShowTitleBar="False" 
-                      BorderThickness="1" 
+                      BorderThickness="0" 
                       Width="300"  Height="350"   WindowTitleBrush="#FF41B1E1"  UseLayoutRounding="True" GlowBrush="#000000" HorizontalAlignment="Right" VerticalAlignment="Bottom" KeyDown="MetroWindow_KeyDown_1" ShowCloseButton="False" ShowIconOnTitleBar="False" ShowMinButton="False" ShowMaxRestoreButton="False" Topmost="True"  >
     <Controls:MetroWindow.Effect>
         <DropShadowEffect BlurRadius="20" Direction="450" ShadowDepth="15"/>
