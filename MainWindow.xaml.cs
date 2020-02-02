@@ -17,6 +17,7 @@ using MahApps.Metro.Controls;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using Application = System.Windows.Forms.Application;
 
 namespace afkCheck0r
 {
@@ -87,8 +88,10 @@ namespace afkCheck0r
 
         private static void doStuff()
         {
-            LockWorkStation();
-            //Console.WriteLine("FUCK IT");  Process.Start("shutdown", "/s /t 0");
+            Application.SetSuspendState(PowerState.Hibernate, true, true);
+            // Shutdown: Process.Start("shutdown", "/s /t 0");
+            // Hibernate: Application.SetSuspendState(PowerState.Hibernate, true, true);
+            // Logscreen: LockWorkStation();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
